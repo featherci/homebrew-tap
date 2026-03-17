@@ -1,26 +1,26 @@
 class Featherci < Formula
   desc "Lightweight self-hosted CI/CD system"
   homepage "https://github.com/featherci/featherci"
-  version "0.6.2"
+  version "0.6.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/featherci/featherci/releases/download/v#{version}/featherci-darwin-arm64.tar.gz"
-      sha256 "e0154dc7a796ea8afd02cf8cf98dc08a574e4af54f9a74cc79401610512a4dab"
+      sha256 "f55bdabde5d4030baea4531faca8c39e0580920a9ef4c6afd0fc9c8165a0e2d5"
     else
       url "https://github.com/featherci/featherci/releases/download/v#{version}/featherci-darwin-amd64.tar.gz"
-      sha256 "065f65eadd8eecbcc22c57ff93e7525d8b75616d0581d544338fe518d92bb394"
+      sha256 "dbc54b67ae90d25d632dd12e9216128b0b6c8d8354351ebca620b2c904541aa5"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/featherci/featherci/releases/download/v#{version}/featherci-linux-arm64.tar.gz"
-      sha256 "ddb3cfda768f20fb8aaed10f78d263ffcca1eb9fd8fac03b6443265cff6c9beb"
+      sha256 "bce7c6af3a129d06b52db12503347d384f7e0edfce0f8074b4b47f17ceabb505"
     else
       url "https://github.com/featherci/featherci/releases/download/v#{version}/featherci-linux-amd64.tar.gz"
-      sha256 "af98d53c8282240cd930f13dcacdc0e6e11695bb7bb59894a70088dbcfd62eed"
+      sha256 "7305088a9dcd3269760478e68219b306b91895c25c45b02352202b22e5d3ddcc"
     end
   end
 
